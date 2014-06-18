@@ -1,0 +1,80 @@
+.pCarousel-wrapper {
+    text-align: center;
+    
+
+    .pCarousel-list {
+        margin: 0 auto;
+        list-style: none;
+        min-height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        > li {
+            display: none;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        > li.show {
+            display: block;
+        }
+    }
+
+    .pCarousel-controllers {
+
+        .pCarousel-control {
+            background: none repeat scroll 0 0 #FF0000;
+            cursor: pointer;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            width: 30px;
+        }
+
+        .pCarousel-control-prev {
+            left: 0;
+        }
+
+        .pCarousel-control-next {
+            right: 0;
+        }
+
+        .pCarousel-pager {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                height: 40px;
+                margin-left: 10px;
+                width: 40px;
+
+                &:first-child {
+                    margin: 0;
+                }
+
+                > span {
+                    background-color: black;
+                    cursor: pointer;
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                &.active {
+                    > span {
+                        background-color: green;
+                    }
+                }
+            }
+        }
+    }
+
+    .show {
+        background-color: yellow;
+    }    
+
+    .full-height {
+        height: 100%;
+    }
+}
+
